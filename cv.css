@@ -1,5 +1,36 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #202020;
+    color: #ffffff;
     font-family: monospace;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    grid-template-areas:
+        "aside header"
+        "aside content"
+        "footer footer";
+}
+p {
+    text-align: justify;
+}
+span {
+    color: #ffa150;
+}
+#presentation {
+    grid-area: header;
+    text-align: center;
+}
+#information {
+    grid-area: content;
+}
+#side-content {
+    grid-area: aside;
+    background-color: #307575;
+}
+#footer {
+    grid-area: footer;
+    background-color: #ffa150;
+    color: black;
+}
+#footer p {
+    text-align: center;
 }
