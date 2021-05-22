@@ -1,5 +1,5 @@
 body {
-    background-color: #202020;
+    background-color: #1a1a1a;
     color: #ffffff;
     font-family: monospace;
     display: grid;
@@ -8,29 +8,68 @@ body {
         "aside header"
         "aside content"
         "footer footer";
+    grid-gap: 5px;
 }
 p {
     text-align: justify;
 }
 span {
-    color: #ffa150;
+    color: #bada55;
 }
 #presentation {
     grid-area: header;
     text-align: center;
+    border-bottom: 2px solid #bada55;
 }
 #information {
     grid-area: content;
 }
 #side-content {
     grid-area: aside;
-    background-color: #307575;
+    background-color: #555;
+    border: 2px solid #bada55;
+    border-radius: 0 0 15px 15px;
+}
+#image-frame {
+    background-color: #333333;
+    width: 97.5%;
+    height: 10em;
+    margin: 5px auto;
 }
 #footer {
     grid-area: footer;
-    background-color: #ffa150;
-    color: black;
+    background-color: #bada55;
+    color: #000000;
+    border-radius: 15px;
 }
 #footer p {
     text-align: center;
+}
+.information-section {
+    background-color: #333333;
+    padding-bottom: 10px;
+    border-radius: 0px 15px 15px 15px;
+}
+.information-section p {
+    margin: 0px 10px;
+}
+.information-section-title {
+    background-color: #bada55;
+    color: #000000;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 0px 15px 15px 0px;
+}
+.side-section {
+    text-align: justify;
+}
+.side-section p {
+    margin: 0px 10px;
+}
+.side-section-title {
+    color: #bada55;
+    text-align: center;
+    border-top: 1px solid #bada55;
+    border-bottom: 1px solid #bada55;
+    padding: 10px;
 }
