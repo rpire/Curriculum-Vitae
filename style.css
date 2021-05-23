@@ -149,6 +149,23 @@ a:hover {
     top: -3px;
     left: 57%;
 }
+#exp-list {
+    list-style: none;
+}
+#exp-list li::before {
+    content: "";
+    position: relative;
+    display: block;
+    background-color: #bada55;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    top: 0.75em;
+    right: 1.5em;
+}
+#exp-list li {
+    margin: 0.5em 0.5%;
+}
 #side-content {
     grid-area: aside;
     background-color: #555;
@@ -158,7 +175,6 @@ a:hover {
 #image-frame {
     background-color: #333333;
     width: 95%;
-    height: 10em;
     margin: 5px auto;
 }
 #footer {
