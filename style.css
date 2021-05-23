@@ -26,20 +26,26 @@ p {
 span {
     color: #bada55;
 }
+a {
+    color: #bada55;
+}
+a:hover {
+    color: #ffa150;
+}
 #presentation {
     grid-area: header;
     text-align: center;
     border-bottom: 2px solid #bada55;
 }
 #presentation h1 {
-    margin-top: 5em;
+    margin-top: 2.5em;
 }
 #information {
     grid-area: content;
 }
 #education {
     position: relative;
-    height: 15em;
+    height: 19.5em;
     z-index: 1;
 }
 #arrow::before {
@@ -58,7 +64,7 @@ span {
     background-color: #505050;
     width: 97.5%;
     height: 3px;
-    top: 110px;
+    top: 11.75em;
 }
 #arrow::after {
     content: "";
@@ -75,10 +81,73 @@ span {
     left: 10%;
 }
 #edu-pointer-2 {
-    left: 40%;
+    left: 30%;
 }
 #edu-pointer-3 {
+    left: 50%;
+}
+#edu-pointer-4 {
     left: 70%;
+}
+#edu-text-box-1 {
+    width: 43%;
+    top: 40px;
+    left: 2%;
+}
+#edu-text-box-1::after {
+    content: "";
+    position: absolute;
+    background-color: #bada55;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    bottom: -3px;
+    left: 21%;
+}
+#edu-text-box-2 {
+    width: 43%;
+    top: 169px;
+    left: 2%;
+}
+#edu-text-box-2::after {
+    content: "";
+    position: absolute;
+    background-color: #bada55;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    top: -3px;
+    left: 67%;
+}
+#edu-text-box-3 {
+    width: 40%;
+    top: 50px;
+    left: 48%;
+}
+#edu-text-box-3::after {
+    content: "";
+    position: absolute;
+    background-color: #bada55;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    bottom: -3px;
+    left: 7%;
+}
+#edu-text-box-4 {
+    width: 40%;
+    top: 169px;
+    left: 48%;
+}
+#edu-text-box-4::after {
+    content: "";
+    position: absolute;
+    background-color: #bada55;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    top: -3px;
+    left: 57%;
 }
 #side-content {
     grid-area: aside;
@@ -123,7 +192,7 @@ span {
     width: 10px;
     height: 10px;
     transform: rotate(45deg);
-    top: 107px;
+    top: 150px;
 }
 .edu-pointer::after {
     content: "";
@@ -133,6 +202,25 @@ span {
     height: 5px;
     top: 2.5px;
     left: 2.5px;
+}
+.edu-box {
+    position: absolute;
+    background-color: #505050;
+    border: 1px solid #bada55;
+    border-radius: 10px;
+}
+.edu-text {
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+}
+#personal-mark {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: auto;
+    top: 8%;
+
 }
 .side-section {
     text-align: justify;
