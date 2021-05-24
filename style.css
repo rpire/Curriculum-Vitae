@@ -91,7 +91,7 @@ a:hover {
 }
 #edu-text-box-1 {
     width: 43%;
-    top: 40px;
+    top: 50px;
     left: 2%;
 }
 #edu-text-box-1::after {
@@ -120,7 +120,7 @@ a:hover {
     left: 67%;
 }
 #edu-text-box-3 {
-    width: 40%;
+    width: 41%;
     top: 50px;
     left: 48%;
 }
@@ -135,7 +135,7 @@ a:hover {
     left: 7%;
 }
 #edu-text-box-4 {
-    width: 40%;
+    width: 41%;
     top: 169px;
     left: 48%;
 }
@@ -164,7 +164,8 @@ a:hover {
     right: 1.5em;
 }
 #exp-list li {
-    margin: 0.5em 0.5%;
+    font-size: 12px;
+    margin: 0.5em 0 0.5em -5px;
 }
 #side-content {
     grid-area: aside;
@@ -190,17 +191,17 @@ a:hover {
 .information-section {
     background-color: #333333;
     padding-bottom: 10px;
-    border-radius: 0px 15px 15px 15px;
+    border-radius: 0 15px 15px 15px;
 }
 .information-section p {
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 .information-section-title {
     background-color: #505050;
     color: #bada55;
     text-align: center;
     padding: 0.5em;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0 15px 15px 0;
 }
 .edu-pointer {
     position: absolute;
@@ -228,7 +229,7 @@ a:hover {
 .edu-text {
     font-size: 10px;
     text-align: center;
-    padding: 5px;
+    padding: 5px 0;
 }
 #personal-mark {
     position: relative;
@@ -251,3 +252,112 @@ a:hover {
     border-bottom: 1px solid #bada55;
     padding: 10px;
 }
+@media only screen and (max-width: 410px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+    }
+    #exp-list li {
+        font-size: 10px;
+        margin: 0.5em 0px 0.5em -10px;
+    }
+    #education {
+        height: 18em;
+    }
+    #arrow::before {
+        left: 83%;
+    }
+    #arrow {
+        top: 60%;
+    }
+    #arrow::after {
+        left: 86%;
+    }
+    .edu-text {
+        font-size: 8px;
+    }
+    .edu-pointer {
+        top: 58.7%;
+    }
+}
+@media only screen and (min-width: 429px) {
+    #arrow::before {
+        left: 88%;
+    }
+    #arrow::after {
+        left: 89%;
+    }
+}
+@media only screen and (min-width: 490px) {
+    #arrow::before {
+        left: 90%;
+    }
+    #arrow::after {
+        left: 91%;
+    }
+}
+@media only screen and (min-width: 508px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #education {
+        height: 25em;
+    }
+    #arrow::before {
+        left: 83%;
+    }
+    #arrow {
+        top: 60%;
+    }
+    #arrow::after {
+        left: 86%;
+    }
+    #edu-text-box-1, #edu-text-box-3 {
+        top: 15%;
+    }
+    #edu-text-box-2, #edu-text-box-4 {
+        top: 67.5%;
+    }
+    #exp-list li {
+        font-size: 16px;
+    }
+    #arrow::before {
+        left: 91%;
+    }
+    #arrow {
+        width: 96.5%;
+    }
+    #arrow::after {
+        left: 92.5%;
+    }
+    .edu-text {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 710px) {
+    #arrow::before {
+        left: 93.7%;
+    }
+    #arrow {
+        width: 97%;
+    }
+    #arrow::after {
+        left: 95%;
+    }
