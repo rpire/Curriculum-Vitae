@@ -38,7 +38,7 @@ a:hover {
     border-bottom: 2px solid #bada55;
 }
 #presentation h1 {
-    margin-top: 2.5em;
+    margin-top: 1em;
 }
 #information {
     grid-area: content;
@@ -167,9 +167,50 @@ a:hover {
     font-size: 12px;
     margin: 0.5em 0 0.5em -5px;
 }
+#soft-skills {
+    position: relative;
+    height: 15em;
+    z-index: 0;
+}
+#soft-bubble-1 {
+    top: 25%;
+    left: 2%;
+}
+#soft-bubble-2 {
+    top: 55%;
+    left: 17.25%;
+}
+#soft-bubble-3 {
+    top: 25%;
+    left: 32.5%;
+}
+#soft-bubble-4 {
+    top: 55%;
+    left: 47.75%;
+}
+#soft-bubble-5 {
+    top: 25%;
+    left: 63%;
+}
+#soft-text-1 {
+    margin-top: 3em;
+}
+#soft-text-2 {
+    margin-top: 3em;
+}
+#soft-text-3 {
+    margin-top: 2.5em;
+}
+#soft-text-4 {
+    margin-top: 3.5em;
+}
+#soft-text-5 {
+    margin-top: 3em;
+    margin-left: 1.5em;
+}
 #side-content {
     grid-area: aside;
-    background-color: #555;
+    background-color: #505050;
     border: 2px solid #bada55;
     border-radius: 0 0 15px 15px;
 }
@@ -177,6 +218,13 @@ a:hover {
     background-color: #333333;
     width: 95%;
     margin: 5px auto;
+}
+#personal-mark {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: auto;
+    top: 8%;
 }
 #footer {
     grid-area: footer;
@@ -231,13 +279,20 @@ a:hover {
     text-align: center;
     padding: 5px 0;
 }
-#personal-mark {
-    position: relative;
-    display: block;
-    width: 95%;
-    margin: auto;
-    top: 8%;
+.soft-bubble {
+    position: absolute;
+    background-color: rgba(80, 80, 80, 0.5);
+    border-radius: 50%;
+    width: 6.1em;
+    height: 6.1em;
 
+}
+.soft-text {
+    position: absolute;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
 }
 .side-section {
     text-align: justify;
@@ -324,7 +379,7 @@ a:hover {
         left: 83%;
     }
     #arrow {
-        top: 60%;
+        top: 58%;
     }
     #arrow::after {
         left: 86%;
@@ -333,7 +388,7 @@ a:hover {
         top: 15%;
     }
     #edu-text-box-2, #edu-text-box-4 {
-        top: 67.5%;
+        top: 65%;
     }
     #exp-list li {
         font-size: 16px;
@@ -346,6 +401,9 @@ a:hover {
     }
     #arrow::after {
         left: 92.5%;
+    }
+    .edu-pointer {
+        top: 57.2%;
     }
     .edu-text {
         font-size: 14px;
@@ -361,3 +419,4 @@ a:hover {
     #arrow::after {
         left: 95%;
     }
+}
